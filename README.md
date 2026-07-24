@@ -3,9 +3,9 @@ Data-driven HR Analytics Dashboard built with Power BI &amp; DAX to uncover work
 # 📊 HR Analytics Dashboard
 
 ## 📌 Project Overview
-This repository contains a comprehensive, production-grade **2-Page Power BI Dashboard** designed for workforce analytics and talent management. It analyzes employee retention, attrition drivers, salary distribution, overtime impact, and organizational demographics.
+This repository contains an end-to-end, production-grade **2-Page Power BI HR Analytics Dashboard** built during the remote internship at **CodeAlpha**. It evaluates key workforce dynamics, turnover risks, department vulnerability, and employee engagement metrics.
 
-This project goes beyond simple visual metrics to build a **data-driven business narrative (Storytelling)** that links employee turnover trends (**Attrition Rate: 16.12%**), job roles, and work-life balance factors to recommend strategic actions for executive leadership and HR managers.
+The primary objective of this project is to transform raw HR records into a **data-driven business story**, pinpointing the root causes behind employee turnover (**Attrition Rate: 16.12%**) and offering targeted, strategic recommendations for executive leadership to boost long-term retention.
 
 ---
 
@@ -23,23 +23,23 @@ This project goes beyond simple visual metrics to build a **data-driven business
 ### 👥 Chapter 1: HR Overview (Workforce Baseline & Attrition Dynamics)
 * **Performance Baseline:** Analyzed an organization of **1,470 total employees**, maintaining **1,233 active staff** with an average age of **36.92 years** and an average tenure of **7.01 years**.
 * **Attrition Baseline:** Logged a total of **237 employee departures**, resulting in an overall **Attrition Rate of 16.12%**.
-* **Age Group & Overtime Exposure (Primary Turnover Driver):**
-  * The **25–34 age group** experiences the highest absolute count of resignations.
-  * *The OverTime Link:* Across almost every age bracket, employees required to work **OverTime** exhibit a significantly higher rate of leaving compared to non-overtime staff, pointing directly to burnout and work-life balance tension.
-* **Travel Frequency & Education Field Distribution:**
-  * The vast majority of departing staff hold degrees in **Life Sciences (37.55%)** and **Medical (26.58%)**.
-  * Employees categorized under **Travel_Rarely** account for 65.82% of attrition count, though frequent travelers (**Travel_Frequently**) show higher relative risk.
+* **Departmental Concentration & Overtime Triggers:**
+  * **Sales Department Concentration:** Attrition is heavily concentrated in the **Sales** department. The turnover rate for the top position in Sales (**Sales Representative at 39.76%**) drastically outpaces all other job roles.
+  * **Gender & Overtime Dynamics:** Female departures in Sales are significantly driven by high **OverTime** workloads. Conversely, male departures in **Research & Development** are strongly linked to excessive overtime. Overtime stands out as a critical cross-departmental turnover trigger.
+* **Travel Frequency Insights:**
+  * Employees who travel rarely (**Travel_Rarely**) account for **66.17%** of total resignations. This confirms that travel fatigue is not the core issue, pointing instead to internal workload stress and compensation gaps.
 
 ![Dashboard Page 1](hr1.jpeg)
 
-### 💼 Chapter 2: Employee Insights (Compensation & Job Role Risk)
-* **Job Role Attrition & Compensation Disparity:**
-  * **Sales Representatives** experience the most critical turnover rate (**39.76%**), driven by entry-level compensation baseline and high target stress.
-  * **Laboratory Technicians** and **Human Resources** staff also display elevated attrition rates (~20-25%).
-  * *The Executive Contrast:* Executive and leadership roles (**Managers**, **Research Directors**) show minimal attrition (<5%) due to high average monthly income ($15K–$20K) and career stability.
-* **Tenure Vulnerability (The Onboarding Gap):**
-  * The line analysis of **Attrition Count by YearsAtCompany** reveals a massive spike in departures during the **first 1–3 years** (peaking at Year 1). Once an employee passes the 3-year mark, attrition probability drops sharply.
-  * *Strategic Action:* HR must overhaul the 30-60-90 day onboarding and mentorship program to support early-stage employee retention.
+### 💼 Chapter 2: Employee Insights (Compensation & Demographics Risk)
+* **Marital Status & High-Risk Demographics:**
+  * Single employees exhibit a significantly higher turnover rate compared to married or divorced peers (**~26% for Single Males**, **~23% for Single Females**). Younger, unattached talent shows higher mobility and lower long-term retention.
+* **Compensation vs. Job Role Risk:**
+  * An inverse relationship exists between monthly income and attrition. Executive roles (**Managers**, **Research Directors**) earning **$15K–$20K** experience near-zero turnover (<5%). 
+  * Entry-level and lower-income roles (**Sales Representatives**, **Laboratory Technicians**) suffer severe turnover due to income disparity and target pressures.
+* **Tenure Vulnerability (First-Year Onboarding Gap):**
+  * Resignations peak sharply during the **first 12 months** (approx. 60 departures at Year 1) and decline steeply after 3 years. This indicates a major gap in the company's early-stage onboarding and role-adaptation framework.
+* **Education Field Impact:** Over **64%** of departing workforce hold degrees in **Life Sciences (37.55%)** and **Medical (26.58%)**.
 
 ![Dashboard Page 2](hr2.jpeg)
 
@@ -88,8 +88,7 @@ Avg Job Satisfaction = AVERAGE('HR_Data'[JobSatisfaction])
 
 ## 💡 Strategic Recommendations for Executive Leadership
 
-  Overtime Workload Redistribution: Re-evaluate staffing levels for teams with high overtime requirements to mitigate burnout-induced resignations.
-
-  Sales Rep Retention Plan: Redesign commission structures and entry-level career progression maps for Sales Representatives to combat the 39.76% attrition spike.
-
-  Early-Tenure Mentorship: Implement structured check-ins during the first 12 months of employment to flatten the high 1st-year departure spike.
+1. **Overtime Restructuring:** Audit and re-distribute workloads in the **Sales** (impactful for female retention) and **R&D** (impactful for male retention) departments to reduce overtime-induced burnout.
+2. **Sales Rep Compensation & Career Pathing:** Overhaul base pay structures and performance bonuses for *Sales Representatives* to combat the critical **39.76%** turnover rate.
+3. **Targeted Single Employee Engagement:** Develop tailored career development plans and retention initiatives targeting high-risk sub-segments, specifically young, single professionals.
+4. **Structured First-Year Onboarding:** Implement a structured 30-60-90 day onboarding and mentorship framework to reduce the massive 1st-year departure spike.
