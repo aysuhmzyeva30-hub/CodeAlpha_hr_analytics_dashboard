@@ -67,7 +67,7 @@ Dynamically computes the remaining workforce currently active in the organizatio
 Active Employees = 
 CALCULATE(
     COUNT('HR_Data'[EmployeeNumber]), 
-    'HR_Data'[Attrition] = "No"
+    'HR_Data'[Attrition] = 0
 )
 ```
 #### 3. Average Monthly Income
